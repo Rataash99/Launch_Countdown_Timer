@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    color: #fb6087
+}
+body::before{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/bg-stars.svg');
+    background-position: top;
+}

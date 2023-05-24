@@ -1,33 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class = 'box-border m-0 p-0'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/27b0574623.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+
   <title>Launch countdown timer</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  <div class="container">
-    
-  </div>
-  We're launching soon
-
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="p-1 min-h-screen relative flex-col flex items-center justify-center bg-gradient-to-b from-[#0d0b1b] via-[#1a1823] to-[#211a29] overflow-hidden">
+    <main class="text-white flex flex-col justify-center items-center gap-12 relative bottom-32">
+      <h1 class = 'text-[1.2rem] text-center tracking-[6px] leading-6 font-extralight'>WE'RE LAUNCHING SOON</h1>
+      <div class = 'flex gap-3 flex-wrap'>
+        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+          <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
+            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black '></div>
+          </div>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'days'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>Days</span>
+        </div>
+        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+          <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
+            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black'></div>
+          </div>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'hours'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>hours</span>
+        </div>
+        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+          <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
+            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black'></div>
+          </div>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'minutes'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>minutes</span>
+        </div>
+        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+          <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
+            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black'></div>
+          </div>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'seconds'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>seconds</span>
+        </div>
+      </div>
+    </main>
+    <span class = 'bg-[url("/images/pattern-hills.svg")] w-screen absolute h-48 bg-cover bg-right bg-no-repeat bottom-[-2rem]'></span>
+    <footer class = 'flex justify-center gap-7 items-center absolute bottom-11 '>
+      <i class="fa-xl fa-brands fa-square-facebook text-[#8486a9] "></i>
+      <i class="fa-xl fa-brands fa-pinterest text-[#8486a9] "></i>
+      <i class="fa-xl fa-brands fa-instagram text-[#8486a9] "></i>
+    </footer>
+    <script src = './index.js'></script>
 </body>
 </html>
