@@ -15,49 +15,49 @@
   <title>Launch countdown timer</title>
 
 </head>
-<body class="p-1 min-h-screen relative flex-col flex items-center justify-center bg-gradient-to-b from-[#0d0b1b] via-[#1a1823] to-[#211a29] overflow-hidden">
-    <main class="text-white flex flex-col justify-center items-center gap-12 relative bottom-32">
-      <h1 class = 'text-[1.2rem] text-center tracking-[6px] leading-6 font-extralight'>WE'RE LAUNCHING SOON</h1>
-      <div class = 'flex gap-3 flex-wrap'>
-        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+<body class="p-1 min-h-screen relative flex-col flex items-center justify-center bg-gradient-to-b from-[#0d0b1b] via-[#1a1823] to-[#211a29] overflow-hidden transition-all duration-1000">
+    <main class="text-white flex flex-col justify-center items-center gap-12 sm:gap-24 relative bottom-32">
+      <h1 class = 'text-[1.2rem] text-center tracking-[6px] leading-6 font-extralight sm:text-[1.4rem] lg:text-[1.6rem] transition-all duration-1000'>WE'RE LAUNCHING SOON</h1>
+      <div class = 'flex gap-3 sm:gap-6 flex-wrap items-center justify-center'>
+        <div class = 'days-content relative flex flex-col gap-2 sm:gap-3 min-w-[4.5rem] '>
           <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
-            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
-            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black '></div>
+            <div class = 'bg-[#2a2c47] rounded-lg px-10 py-5 sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000 ease-in-out'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black sm:border-b-[0.6rem] lg:border-b-[0.7rem] sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000 ease-in-out'></div>
           </div>
-          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'days'></div>
-          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>Days</span>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1.1rem] sm:text-7xl sm:left-[1.3rem] sm:top-[1.6rem] lg:text-8xl lg:left-[1.2rem] lg:top-[1.9rem] transition-all duration-1000 ease-in-out' id = 'days'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center sm:text-[13px] transition-all duration-1000 ease-in-out'>Days</span>
         </div>
-        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+        <div class = 'days-content relative flex flex-col gap-2 sm:gap-3 min-w-[4.5rem]'>
           <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
-            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
-            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black'></div>
+            <div class = 'bg-[#2a2c47] rounded-lg px-10 py-5 sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black sm:border-b-[0.6rem] lg:border-b-[0.7rem] sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000'></div>
           </div>
-          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'hours'></div>
-          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>hours</span>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1.1rem] sm:text-7xl sm:left-[1.3rem] sm:top-[1.6rem] lg:text-8xl lg:left-[1.2rem] lg:top-[1.9rem] transition-all duration-1000' id = 'hours'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center sm:text-[13px] transition-all duration-1000'>hours</span>
         </div>
-        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+        <div class = 'days-content relative flex flex-col gap-2 sm:gap-3 min-w-[4.5rem]'>
           <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
-            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
-            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black'></div>
+            <div class = 'bg-[#2a2c47] rounded-lg px-10 py-5 sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black sm:border-b-[0.6rem] lg:border-b-[0.7rem] sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000'></div>
           </div>
-          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'minutes'></div>
-          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>minutes</span>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1.1rem] sm:text-7xl sm:left-[1.3rem] sm:top-[1.6rem] lg:text-8xl lg:left-[1.2rem] lg:top-[1.9rem] transition-all duration-1000' id = 'minutes'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center sm:text-[13px] transition-all duration-1000'>minutes</span>
         </div>
-        <div class = 'days-content relative flex flex-col gap-2 min-w-[4.5rem]'>
+        <div class = 'days-content relative flex flex-col gap-2 sm:gap-3 min-w-[4.5rem]'>
           <div class = 'flex flex-col shadow-inner shadow-black rounded-xl'>
-            <div class = 'bg-[#2e304b] rounded-lg px-10 py-5'></div>
-            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black'></div>
+            <div class = 'bg-[#2a2c47] rounded-lg px-10 py-5 sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000'></div>
+            <div class = 'bg-[#343650] rounded-lg px-10 py-5 border-b-8 border-black sm:border-b-[0.6rem] lg:border-b-[0.7rem] sm:px-16 sm:py-8 lg:px-[5rem] lg:py-10 transition-all duration-1000'></div>
           </div>
-          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1rem]' id = 'seconds'></div>
-          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center'>seconds</span>
+          <div class = 'absolute top-[1.3rem] text-4xl text-[#fb6087] left-[1.1rem] sm:text-7xl sm:left-[1.3rem] sm:top-[1.6rem] lg:text-8xl lg:left-[1.2rem] lg:top-[1.9rem] transition-all duration-1000' id = 'seconds'></div>
+          <span class = 'text-[9px] text-[#8486a9] font-light tracking-[3px] uppercase text-center sm:text-[13px] transition-all duration-1000'>seconds</span>
         </div>
       </div>
     </main>
-    <span class = 'bg-[url("/images/pattern-hills.svg")] w-screen absolute h-48 bg-cover bg-right bg-no-repeat bottom-[-2rem]'></span>
-    <footer class = 'flex justify-center gap-7 items-center absolute bottom-11 '>
-      <i class="fa-xl fa-brands fa-square-facebook text-[#8486a9] "></i>
-      <i class="fa-xl fa-brands fa-pinterest text-[#8486a9] "></i>
-      <i class="fa-xl fa-brands fa-instagram text-[#8486a9] "></i>
+    <span class = 'bg-[url("/images/pattern-hills.svg")] w-screen absolute h-48 bg-cover bg-right bg-no-repeat bottom-[-2rem] sm:bottom-0'></span>
+    <footer class = 'flex justify-center gap-7 items-center absolute bottom-11 sm:bottom-14 lg:bottom-16'>
+      <i class="fa-xl fa-brands fa-square-facebook text-[#8486a9] hover:text-[#fb6087] duration-1000 hover:cursor-pointer"></i>
+      <i class="fa-xl fa-brands fa-pinterest text-[#8486a9] hover:text-[#fb6087] duration-1000 hover:cursor-pointer"></i>
+      <i class="fa-xl fa-brands fa-instagram text-[#8486a9] hover:text-[#fb6087] duration-1000 hover:cursor-pointer"></i>
     </footer>
     <script src = './index.js'></script>
 </body>
