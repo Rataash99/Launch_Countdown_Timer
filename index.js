@@ -8,7 +8,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
-let currDate = new Date().getDate() + 8 + " " + monthNames[new Date().getMonth()];
+let currDate = new Date().getDate() + 14 + " " + monthNames[new Date().getMonth()];
 
 let countdown = new Date(`${currDate}, 2023 00:00:00`);
 
