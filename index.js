@@ -3,9 +3,14 @@ let days = document.getElementById('days');
 let hours = document.getElementById('hours');
 let minutes = document.getElementById('minutes');
 let seconds = document.getElementById('seconds');
+// let sbsbs = `${days}`
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
+let currDate = new Date().getDate() + 8 + " " + monthNames[new Date().getMonth()];
 
-let countdown = new Date(`June 8, 2023 00:00:00`);
+let countdown = new Date(`${currDate}, 2023 00:00:00`);
 
 let timer = setInterval (() => {
     let currDate = new Date().getTime();
